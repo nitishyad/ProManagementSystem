@@ -1,0 +1,231 @@
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+  
+  .modal {
+    min-width: 300px;
+    min-height: 500px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1100;
+  }
+/* Title */
+.formGroupTitle {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+}
+
+.formGroupTitle label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.formGroupTitle input {
+  border: 1px solid #4d40551a;
+  padding: 10px;
+  text-align: left;
+  outline: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+ 
+
+}
+
+/* Priority */
+.formGroupPriority {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.formGroupPriority label {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+  color: #000;
+  letter-spacing: 0.6px;
+}
+
+.priorityContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priorityOption {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #767575;
+  margin-left: 1.5rem;
+}
+
+.priorityDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.selected {
+  background-color: #eeecec;
+}
+
+/* Checklist */
+.formGroupChecklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-family: "Inter";
+  max-height: 280px;
+  overflow-y: scroll;
+}
+.formGroupChecklist label{
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Inter";
+}
+
+
+.formGroupChecklist::-webkit-scrollbar {
+  width: 10px;
+}
+
+.formGroupChecklist::-webkit-scrollbar-thumb {
+  background-color: #8DAAB9CC;
+  border-radius: 4px;
+}
+
+.checklistitems {
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  display: flex;
+  gap: 6px;
+  padding: 8px;
+  margin: 0.6rem 0;
+}
+
+.checklistitems input[type="text"] {
+  width: 90%;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter";
+}
+
+.checklistitems::placeholder {
+  color: #828282;
+  font-size: 14px;
+}
+
+.checklistitems input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #E2E2E2;
+}
+.checklistitems input[type="checkbox"]:checked {
+  background-color: #17a2b8 !important; /* Add !important to override other styles */
+}
+
+.deleteIcon {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.addNew {
+  background: transparent;
+  display: block;
+  color: #767575;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter";
+}
+.calendarContainer{
+  font-family: "Poppins";
+  margin-right: 3rem;
+}
+.datePicker {
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  height: 45px;
+  color: #707070;
+  font-weight: 500;
+  width: auto;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1rem;
+  left: 20px; /* Adjust this value if needed */
+  right: 20px; /* Adjust this value if needed */
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  
+}
+
+.modalButtons button {
+  width: 150px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.cancelButton {
+  background-color: transparent;
+  color: #cf3636;
+  border: 2px solid #cf3636;
+}
+
+.saveButton {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+}
+.requiredStar {
+  color: #FF0000;
+}

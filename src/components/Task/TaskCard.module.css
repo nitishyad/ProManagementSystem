@@ -1,0 +1,117 @@
+.taskCard {
+  background-color: white;
+  border-radius: 20px;
+  padding: 14px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #707070;
+}
+
+.priorityDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+
+.title {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.popupMenuIcon {
+  margin-left: auto;
+  cursor: pointer;
+  width: 20px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+.checklistStatus{
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-weight: 500;
+}
+.checklist {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+.checklistTitle{
+  margin-left: 10px;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E2E2E2;
+  width: 100%;
+  padding:12px 0 ;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.checkbox {
+  margin-left: 10px;
+  border: 2px solid #E2E2E2;
+  border-radius: 4px; /* Adjusted border-radius */
+  height: 18px;
+  width: 18px;
+}
+
+.collapseIcon {
+  cursor: pointer;
+}
+
+.cardbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.formattedDate{
+  background-color: #DBDBDB;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #5A5A5A;
+}
+
+.columnchips{
+  font-size: 10px;
+}
+.columnButtons {
+  display: flex;
+}
+
+.columnButtons button {
+  background: #EEECEC; 
+  color: #767575;
+  font-weight: 500;
+  border: none;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
